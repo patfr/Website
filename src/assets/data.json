@@ -1,0 +1,165 @@
+{
+    "info": "All dates are in dd/mm/yy format<br /><br />Welcome to my website",
+    "news": [
+            
+    ],
+    "projects": {
+        "current": [
+            {
+                "title": "The Challenge Tree",
+                "description": "<i>A tmt game about challenges &\nlarge numbers.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Challenge-Tree/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Challenge-Tree"
+                    }
+                ]                
+            },
+            {
+                "title": "The Tree Of Death",
+                "description": "<i>A tmt game about deadly things\n& large numbers.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Tree-Of-Death/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Tree-Of-Death"
+                    }
+                ]                
+            }
+        ],
+        "abandoned": [
+            {
+                "title": "The Synergism Tree",
+                "description": "<i>A tmt game about the game\nSynergism.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Synergism-Tree/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Synergism-Tree"
+                    }
+                ]                
+            },
+            {
+                "title": "The Conversion Tree",
+                "description": "<i>A tmt game about converting\nresources & large numbers.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Conversion-Tree/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Conversion-Tree"
+                    }
+                ]                
+            },
+            {
+                "title": "The Universal Tree",
+                "description": "<i>A tmt game about the universe\n& large numbers.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Universal-Tree/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Universal-Tree"
+                    }
+                ]                
+            }
+        ],
+        "experimental": [
+            {
+                "title": "Communitree-Rewritten",
+                "description": "<i>A Profectus remake of\nComminutree by ducdat0507.</i>",
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/Communitree-Rewritten/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/Communitree-Rewritten"
+                    }
+                ]                
+            }
+        ]
+    },
+    "about": {
+        "name": "Patrick Frederiksen",
+        "age": 17,
+        "country": "Denmark",
+        "description": "Hi I like programming and helping people with it. I know a lot of programming languages. I have been programming since I was 11.",
+        "langs": [
+            {
+                "lang": "C",
+                "color": "#ffffff",
+                "background": "#3e56cf"
+            }, 
+            {
+                "lang": "C++",
+                "color": "#ffffff",
+                "background": "#66a0f2"
+            },
+            {
+                "lang": "C#",
+                "color": "#ffffff",
+                "background": "#a346fa"
+            },
+            {
+                "lang": "Html",
+                "color": "#ffffff",
+                "background": "#ff6524"
+            },
+            {
+                "lang": "CSS",
+                "color": "#ffffff",
+                "background": "#40b6ff"
+            },
+            {
+                "lang": "JavaScript",
+                "color": "#000000",
+                "background": "#ffec5e"
+            },
+            {
+                "lang": "TypeScript",
+                "color": "#ffffff",
+                "background": "#3d8bff"
+            },
+            {
+                "lang": "Java",
+                "color": "#ffffff",
+                "background": "#ff5252"
+            },
+            {
+                "lang": "Python",
+                "color": "#000000",
+                "background": "#d6f768"
+            },
+            {
+                "lang": "Assembly",
+                "color": "#ffffff",
+                "background": "#3b34fa"
+            }
+        ],
+        "links": [
+            {
+                "name": "Discord",
+                "link": "https://discord.gg/7ahtMyv5hX",
+                "color": "#ffffff",
+                "background": "#5865f2"
+            }
+        ],
+        "lastUpdated": "3/9/22"
+    }
+}
