@@ -7,6 +7,7 @@
 		<a class="barItem" href="#abandoned" v-if="data.projects.abandoned.length > 0">Abandoned</a>
 		<a class="barItem" href="#experimental" v-if="data.projects.experimental.length > 0">Experimental</a>
 		<a class="barItem" href="#about">About</a>
+		<a class="barItem" href="#run" v-if="IFrameLink != ''">Play</a>
 	</div>
 	<div id="background">
 		<div id="foreground">
@@ -16,7 +17,7 @@
 			</div>
 			<div id="news" class="section" v-if="data.news.length > 0">
 				<h2 class="title">News</h2><br />
-				<ProjectList :projects="data.news ? data.news : []" /><br />
+				<NewsList :news="data.news ? data.news : []" /><br />
 			</div>
 			<div id="current" class="section" v-if="data.projects.current.length > 0">
 				<h2 class="title">Current</h2><br />
@@ -46,6 +47,11 @@
 				</div><br />
 				<span>(About was last updated: {{ data.about.lastUpdated }})</span>
 			</div>
+			<div id="run" v-if="IFrameLink != ''">
+				<br /><h2 class="title">Play</h2>
+				<h4 v-on:click="CloseIFrame()">(Close)</h4><br />
+				<iframe :src="IFrameLink" title="Test"></iframe>
+			</div>
 			<div id="rightPadding"></div>
 			<div id="bottomPadding"></div>
 		</div>
@@ -54,16 +60,25 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import IFrameLink from '@/assets/Global';
 import ProjectList from './components/ProjectList.vue';
+import NewsList from './components/NewsList.vue';
 import data from './assets/data.json';
 
 export default defineComponent({
 	name: 'App',
 	components: {
-		ProjectList
+		ProjectList,
+		NewsList
+	},
+	methods: {
+		CloseIFrame(): undefined {
+			this.IFrameLink = "";
+			return;
+		}
 	},
 	data() {
-		return { data }
+		return { data, IFrameLink }
 	}
 });
 </script>

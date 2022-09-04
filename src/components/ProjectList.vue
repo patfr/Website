@@ -4,21 +4,31 @@
             <h3 class="proItemTitle">{{ proj.title }}</h3>
             <span class="proItemDescription" v-html="proj.description"></span>
             <div class="proItemLinks">
-                <a class="proItemLink" :href="link.link" v-for="link in proj.links" :key="link.text">{{ link.text }}</a>
+                <template v-for="link in proj.links" :key="link.text">
+                    <a class="proItemLink" :href="link.link" v-if="link.text != 'Run'">{{ link.text }}</a>
+                    <a class="proItemLink" href="#run" v-if="link.text == 'Run'" v-on:click="RunIFrame(link.run)">{{ link.text }}</a> 
+                </template>
             </div>
         </div>
     </div>
 </template>
 
 <script lang="ts">
+import IFrameLink from '@/assets/Global';
 import { defineComponent, PropType } from 'vue';
-import Project from '../assets/Project';
+import { Project } from '../assets/Global';
 
 export default defineComponent({
     props: {
         projects: {
             required: true,
             type: Array as PropType<Project[]>
+        }
+    },
+    methods: {
+        RunIFrame(run?: string) : undefined {
+            if (!run) return;
+            IFrameLink.value = run;
         }
     }
 })
