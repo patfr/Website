@@ -51,12 +51,16 @@ export default defineComponent({
     min-width: 300px;
     width: fit-content;
     height: 170px;
-    margin: 15px;
+    margin: 15px 0 15px 15px;
     display: flex;
     background: #373737;
     border-radius: 8px;
     overflow: hidden;
     flex-direction: column;
+}
+
+.proItem:last-of-type {
+    margin: 15px;
 }
 
 .proItemTitle {

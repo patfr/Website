@@ -33,18 +33,23 @@ export default defineComponent({
     display: flex;
     border-radius: 8px;
     overflow: auto;
+    flex-direction: column;
 }
 
 .proItem {
     min-width: 300px;
-    width: 100%;
+    width: calc(100% - 30px);
     height: fit-content;
-    margin: 15px;
+    margin: 15px 15px 0 15px;
     display: flex;
     background: #373737;
     border-radius: 8px;
     overflow: hidden;
     flex-direction: column;
+}
+
+.proItem:last-of-type {
+    margin: 15px;
 }
 
 .proItemTitle {
