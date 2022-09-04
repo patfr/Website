@@ -5,7 +5,7 @@
             <span class="proItemDescription" v-html="proj.description"></span>
             <div class="proItemLinks">
                 <template v-for="link in proj.links" :key="link.text">
-                    <a class="proItemLink" :href="link.link" v-if="link.text != 'Run'">{{ link.text }}</a>
+                    <a class="proItemLink" :href="link.link" v-if="link.text != 'Run'" target="_blank">{{ link.text }}</a>
                     <a class="proItemLink" href="#run" v-if="link.text == 'Run'" v-on:click="RunIFrame(link.run)">{{ link.text }}</a> 
                 </template>
             </div>
