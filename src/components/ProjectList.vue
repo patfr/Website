@@ -44,18 +44,17 @@ export default defineComponent({
 <style scoped>
 .proItemList {
     height: fit-content;
-    min-width: 200px;
     width: 100%;
     background: #272727;
     margin: 0;
     display: flex;
     border-radius: 8px;
     overflow: auto;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .proItem {
+    min-width: 300px;
     width: 300px;
     height: 170px;
     margin: 15px 0 0 15px;
