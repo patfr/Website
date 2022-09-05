@@ -50,8 +50,8 @@ export default defineComponent({
     margin: 0;
     display: flex;
     border-radius: 8px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
