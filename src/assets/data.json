@@ -2,6 +2,11 @@
     "info": "All dates are dd/mm/yy<br /><br />Welcome to my website",
     "news": [
         {
+            "title": "Mobile!",
+            "date": "05/09/22",
+            "description": "The website now has better support for mobile! projects now have images!"              
+        },
+        {
             "title": "Icon",
             "date": "04/09/22",
             "description": "The website now has an icon! improved some visuals too"              
@@ -16,7 +21,10 @@
         "current": [
             {
                 "title": "The Challenge Tree",
-                "description": "<i>A tmt game about challenges &\nlarge numbers.</i>",
+                "description": "<i>A tmt game about challenges & large numbers.</i>",
+                "image": {
+                    "img": "TCT"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -34,7 +42,10 @@
             },
             {
                 "title": "The Tree Of Death",
-                "description": "<i>A tmt game about deadly things\n& large numbers.</i>",
+                "description": "<i>A tmt game about deadly things & large numbers.</i>",
+                "image": {
+                    "img": "TTOD"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -54,7 +65,10 @@
         "abandoned": [
             {
                 "title": "The Synergism Tree",
-                "description": "<i>A tmt game about the game\nSynergism.</i>",
+                "description": "<i>A tmt game about the game Synergism.</i>",
+                "image": {
+                    "img": "TST"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -72,7 +86,10 @@
             },
             {
                 "title": "The Conversion Tree",
-                "description": "<i>A tmt game about converting\nresources & large numbers.</i>",
+                "description": "<i>A tmt game about converting resources & large numbers.</i>",
+                "image": {
+                    "img": "TCOT"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -90,7 +107,10 @@
             },
             {
                 "title": "The Universal Tree",
-                "description": "<i>A tmt game about the universe\n& large numbers.</i>",
+                "description": "<i>A tmt game about the universe & large numbers.</i>",
+                "image": {
+                    "img": "TUT"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -110,7 +130,10 @@
         "experimental": [
             {
                 "title": "Communitree-Rewritten",
-                "description": "<i>A Profectus remake of\nComminutree by ducdat0507.</i>",
+                "description": "<i>A Profectus remake of Comminutree by ducdat0507.</i>",
+                "image": {
+                    "img": "CRT"
+                },
                 "links": [
                     {
                         "text": "Game",
@@ -124,7 +147,7 @@
                         "text": "Play",
                         "run": "https://patfr.github.io/Communitree-Rewritten/"
                     }
-                ]                
+                ]   
             }
         ]
     },

@@ -6,9 +6,14 @@ export interface Link {
     run?: string
 }
 
+export interface Image {
+    img: string
+}
+
 export interface Project {
     title: string,
     description: string,
+    image?: Image,
     links: Link[]
 }
 

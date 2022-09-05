@@ -21,15 +21,15 @@
 			</div>
 			<div id="current" class="section" v-if="data.projects.current.length > 0">
 				<h2 class="title">Current</h2><br />
-				<ProjectList :projects="data.projects.current ? data.projects.current : []" /><br />
+				<ProjectList :projects="data.projects.current ?? []" /><br />
 			</div>
 			<div id="abandoned" class="section" v-if="data.projects.abandoned.length > 0">
 				<h2 class="title">Abandoned</h2><br />
-				<ProjectList :projects="data.projects.abandoned ? data.projects.abandoned : []" /><br />
+				<ProjectList :projects="data.projects.abandoned ?? []" /><br />
 			</div>
 			<div id="experimental" class="section" v-if="data.projects.experimental.length > 0">
 				<h2 class="title">Experimental</h2><br />
-				<ProjectList :projects="data.projects.experimental ? data.projects.experimental : []" /><br />
+				<ProjectList :projects="data.projects.experimental ?? []" /><br />
 			</div>
 			<div id="about" class="section">
 				<h2 class="title">About</h2><br />

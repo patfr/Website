@@ -24,7 +24,6 @@ export default defineComponent({
 
 <style scoped>
 .proItemList {
-    max-height: 800px;
     height: fit-content;
     min-width: 200px;
     width: 100%;
@@ -42,7 +41,7 @@ export default defineComponent({
     height: fit-content;
     margin: 15px 15px 0 15px;
     display: flex;
-    background: #373737;
+    background: linear-gradient(#303030, #373737);
     border-radius: 8px;
     overflow: hidden;
     flex-direction: column;
@@ -64,6 +63,5 @@ export default defineComponent({
 .proItemDescription {
     margin: 10px;
     max-height: 200px;
-    white-space: pre-wrap;
 }
 </style>

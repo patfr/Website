@@ -79,7 +79,7 @@ a {
 }
 
 .itemList {
-    height: 50px;
+    height: fit-content;
     min-width: 50px;
     max-width: 100%;
     width: fit-content;
@@ -89,17 +89,22 @@ a {
     border-radius: 8px;
     overflow-x: auto;
     overflow-y: hidden;
+    flex-wrap: wrap;
 }
 
 .item {
     min-width: 40px;
     width: fit-content;
     height: 40px;
-    margin: 5px;
+    margin: 5px 0 0 5px;
     display: flex;
     background: #373737;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.item:last-of-type {
+    margin: 5px;
 }
 
 .item>* {
