@@ -1,6 +1,6 @@
 <template>
     <div class="proItemList">
-        <div class="proItem" v-for="ne in news" :key="ne.title">
+        <div class="proItem" v-for="ne in news.slice(0, 3)" :key="ne.title">
             <h3 class="proItemTitle">{{ ne.title }}</h3>
             <h4 class="proItemDate">({{ ne.date }})</h4>
             <span class="proItemDescription" v-html="ne.description"></span>
@@ -25,7 +25,6 @@ export default defineComponent({
 <style scoped>
 .proItemList {
     height: fit-content;
-    min-width: 200px;
     width: 100%;
     background: #272727;
     margin: 0;
