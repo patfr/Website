@@ -129,6 +129,27 @@
         ],
         "experimental": [
             {
+                "title": "The Blob War",
+                "description": "<i>A tmt game about BLOBs. This is just a joke game.</i>",
+                "image": {
+                    "img": "TBW"
+                },
+                "links": [
+                    {
+                        "text": "Game",
+                        "link": "https://patfr.github.io/The-Blob-War/"
+                    },
+                    {
+                        "text": "Repository",
+                        "link": "https://github.com/patfr/The-Blob-War"
+                    },
+                    {
+                        "text": "Play",
+                        "run": "https://patfr.github.io/The-Blob-War/"
+                    }
+                ]                
+            },
+            {
                 "title": "Communitree-Rewritten",
                 "description": "<i>A Profectus remake of Comminutree by ducdat0507.</i>",
                 "image": {
